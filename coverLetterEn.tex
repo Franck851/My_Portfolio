@@ -1,0 +1,109 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Edited by:
+% François Théroux <ftheroux@progranova.com>
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Specify the color
+\colorlet{awesome}{awesome-blue}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[rectangle,noedge,left]{profile}
+\name{François}{Théroux}
+\position{Consultant - Artificial Intelligence, Big Data and Cloud Computing}
+
+\mobile{+1 (450) 400-1040}
+\email{ftheroux@progranova.com}
+\homepage{www.progranova.com}
+\linkedin{ftheroux}
+
+\quote{``My passion: Store, visualize and use data to create value in your corporation"}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company information
+\recipient
+  {Progranova Inc.}
+  {1002-1920 boul du souvenir\\laval, qc h7n 0b3}
+% The date on the letter, default is the date of compilation
+\letterdate{}
+% The recipient of the letter
+\letteropening{Dear prospective client,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {Progranova - Copyright \textcopyright 2019}
+  {François Théroux~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Summary}
+With 5 years of experience in information technology, I have learned and apply my knowledge to different companies such as Desjardins, Raymond Chabot Grant Thornton and CAE. My passion for the data pushes me day after day to find solutions to create value from them. By setting up a data lake at Desjardins, to the application of artificial intelligence to classify stocks at CN Investment Division, I'm always ready for my next mission. I hope I can use my skills for your project.
+
+\lettersection{Why Progranova?}
+Progranova has many years of experience in the new technologies' market in Montreal. Now specialized in artificial intelligence, big data and cloud computing, Progranova is able to use its expertise in several sectors of activity to create tangible value from data. Business sectors such as aeronautics, banking, manufacturing, education, transportation and software development to name a few. Progranova exists to invent and develop the world of tomorrow.
+
+\lettersection{Why Me?}
+I am like a Toyota. I do not require maintenance, I am reliable and I lead my projects safely. In addition, I am open to criticism and I know how to handle the pressure. With my varied experiences, I have been able to develop solutions to many of the existing problems in the artificial intelligence, big data and cloud computing industry. Concretely, the security of data in open source solutions throughout a process of calculating a model and more.
+\newline
+\newline
+I look forward to creating value in your business.
+
+\end{cvletter}
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}

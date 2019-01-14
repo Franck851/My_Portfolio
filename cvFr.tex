@@ -1,0 +1,64 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+\colorlet{awesome}{awesome-blue}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[rectangle,noedge,right]{profile}
+\name{François}{Théroux}
+\position{Consultant - Intelligence Artificielle, Big Data et Cloud Computing}
+
+\mobile{+1 (450) 400-1040}
+\email{ftheroux@progranova.com}
+\homepage{www.progranova.com}
+\linkedin{ftheroux}
+
+\quote{``Ma passion: Stocker, visualiser et utiliser la donnée pour créer de la valeur dans votre entreprise"}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[L]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+\makecvfooter
+  {Progranova - Copyright \textcopyright 2019}
+  {François Théroux~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%-------------------------------------------------------------------------------
+\input{cvFr/skills.tex}
+\input{cvFr/experience.tex}
+\input{cvFr/associations.tex}
+\input{cvFr/education.tex}
+\input{cvFr/hackathon.tex}
+\newpage
+\input{cvFr/interests.tex}
+
+%-------------------------------------------------------------------------------
+\end{document}

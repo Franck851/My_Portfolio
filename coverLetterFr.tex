@@ -1,0 +1,112 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Edited by:
+% François Théroux <ftheroux@progranova.com>
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Specify the color
+\colorlet{awesome}{awesome-blue}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[rectangle,noedge,left]{profile}
+\name{François}{Théroux}
+\position{Consultant - Intelligence Artificielle, Big Data et Cloud Computing}
+
+\mobile{+1 (450) 400-1040}
+\email{ftheroux@progranova.com}
+\homepage{www.progranova.com}
+\linkedin{ftheroux}
+
+\quote{``Ma passion: Stocker, visualiser et utiliser la donnée pour créer de la valeur dans votre entreprise"}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company information
+\recipient
+  {Progranova Inc.}
+  {1002-1920 boul du souvenir\\laval, qc h7n 0b3}
+% The date on the letter, default is the date of compilation
+\letterdate{}
+% The recipient of the letter
+\letteropening{Cher client potentiel,}
+% How the letter is closed
+\letterclosing{Cordialement,}
+% Any enclosures with the letter
+\letterenclosure[Attaché]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {Progranova - Copyright \textcopyright 2019}
+  {François Théroux~~~·~~~Lettre de présentation}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Résumé}
+Avec maintenant 5 ans d'expérience en technologies de l'information, j'ai su apprendre et appliquer mon savoir-faire auprès de différentes entreprises telles que Desjardins, Raymond Chabot Grant Thornton et CAE. Ma passion pour la donnée me pousse jour après jour à trouver des solutions pour la valoriser davantage.  Par la mise en place d'un lac de données chez Desjardins, en passant par l'application de l'intelligence artificielle pour classifier des titres boursiers au CN Investment Division, je suis toujours prêt pour ma prochaine mission. J'espère pouvoir mettre à profit mes compétences au sein de votre projet.
+
+\lettersection{Pourquoi Progranova?}
+Progranova cumule plusieurs années d'expérience dans le marché des nouvelles technologies à Montreal. Maintenant spécialisé en intelligence artificielle, big data et cloud computing, Progranova est en mesure de mettre à profit son expertise dans plusieurs secteurs d'activités pour créer une valeur tangible avec la donnée. Des secteurs d'activités tels que l'aéronautique, le bancaire, le manufacturier, l'éducation, le transport et le développement logiciel pour en nommer quelques-uns. Progranova existe pour inventer et développer le monde de demain.
+
+\lettersection{Pourquoi Moi?}
+Je suis comme une Toyota. Je ne nécessite pas d'entretien, je suis fiable et je mène mes projets à bon port. De plus, je suis ouvert à la critique et je sais très bien gérer la pression. Avec mes expériences variées, j'ai su développer des solutions à beaucoup de problèmes existants dans l'industrie de l'intelligence artificielle, le Big Data et le Cloud Computing. Je parle notamment de la sécurité de la donnée dans des solutions open source tout au long d'un processus de calcul d'un modèle et bien plus.
+\newline
+\newline
+J'ai hâte de créer de la valeur dans votre entreprise.
+
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
